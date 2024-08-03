@@ -89,6 +89,7 @@ services:
   jaeger:
     image: jaegertracing/all-in-one:1.6
     container_name: jaeger
+    restart: always
     environment:
       - COLLECTOR_ZIPKIN_HTTP_PORT=9411
     ports:
